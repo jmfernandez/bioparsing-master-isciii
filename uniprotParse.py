@@ -4,6 +4,10 @@
 '''
 	Prácticas de Python 2.7 y bases de datos biológicas
 	Script de parseado de entradas en formato SWISSPROT
+	Máster en Bioinformática y Biología Computacional, ENS-ISCIII
+	Curso: 2015-2016
+	Asignatura: Big Data Parsing and Processing
+	Autor: José María Fernández
 '''
 
 from __future__ import print_function
