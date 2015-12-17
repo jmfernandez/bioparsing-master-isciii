@@ -91,4 +91,4 @@ if __name__ == '__main__':
 					
 		
 	else:
-		raise AssertionError("Debes introducir al menos una URI que apunte a un recurso con formato SW.")
+		raise AssertionError("Debes introducir al menos una URI que apunte a un recurso con formato UniProt XML.")

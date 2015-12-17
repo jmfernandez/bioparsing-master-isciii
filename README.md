@@ -49,7 +49,13 @@ Different python 2.7 examples for bioinformatic students, showing the advantages
 
 6. Getting JSON content from internet, and parsing, using next official example from Ensembl: [https://github.com/Ensembl/ensembl-rest/wiki/Example-Python-Client](https://github.com/Ensembl/ensembl-rest/wiki/Example-Python-Client)
 
-7. Parsing something more complex, like a PDB file (program [pdbParse.py](pdbParse.py)). Uncompression is done using an external program, showing the design pattern of fetching the content from a program:
+7. Parsing a UniProt entry using [BioPython](http://biopython.org/wiki/Documentation):
+
+  ```bash
+  python2 uniprotParseBioPython.py samples/Q8IY21.txt
+  ```
+
+8. Parsing something more complex, like a PDB file (program [pdbParse.py](pdbParse.py)). Uncompression is done using an external program, showing the design pattern of fetching the content from a program:
 
   ```bash
   python2 pdbParse.py samples/2Q5W.pdb.gz
