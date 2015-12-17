@@ -3,7 +3,11 @@
 
 '''
 	Prácticas de Python 2.7 y bases de datos biológicas
-	Script de parseado de entradas en formato SWISSPROT
+	Script de parseado de entradas en formato SWISSPROT, comprimidas con gzip
+	Máster en Bioinformática y Biología Computacional, ENS-ISCIII
+	Curso: 2015-2016
+	Asignatura: Big Data Parsing and Processing
+	Autor: José María Fernández
 '''
 
 from __future__ import print_function
@@ -123,6 +127,7 @@ if __name__ == '__main__':
 						
 						# Impresión de comprobación
 						print("ACC: {0} ; ID: {1} ; Last: {2}".format(acc[0],id,lastdate))
+						print("All accession numbers: ",', '.join(acc))
 			except IOError as e:
 				print("Error de lectura de fichero {0}: {1}".format(e.errno, e.strerror),file=sys.stderr)
 				#raise

@@ -116,12 +116,13 @@ class SWParser(object):
 if __name__ == '__main__':
 	if len(sys.argv)>1:
 		# Procesamiento de cada fichero
-		for infile in sys.argv[1:]:
+		for filename in sys.argv[1:]:
 			try:
-				for acc,id,lastdate,description,sequence,molw in SWParser(infile):
+				for acc,id,lastdate,description,sequence,molw in SWParser(filename):
 					
 					# Impresión de comprobación
 					print("ACC: {0} ; ID: {1} ; Last: {2}".format(acc[0],id,lastdate))
+					print("All accession numbers: ",', '.join(acc))
 			except IOError as e:
 				print("Error de lectura de fichero {0}: {1}".format(e.errno, e.strerror),file=sys.stderr)
 				#raise
