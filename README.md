@@ -30,7 +30,7 @@ Different python 2.7 examples for bioinformatic students, showing the advantages
 4. Variant from previous script, which parses network resource (program [uniprotParseHTTP.py](uniprotParseHTTP.py)):
 
   ```bash
-  python2 uniprotParseHTTP.py http://www.uniprot.org/uniprot/Q2K3L7.txt
+  python2 uniprotParseHTTP.py http://www.uniprot.org/uniprot/Q8IY21.txt
   ```
   
   If you want to test with a random UniProt SW entry from human, open next link in your browser: [http://www.uniprot.org/uniprot/?query=reviewed:yes&random=yes](http://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:9606&random=yes)
@@ -44,7 +44,7 @@ Different python 2.7 examples for bioinformatic students, showing the advantages
 5. Script which parses a UniProt XML network resource using DOM (program [uniprotParseHTTP_XML.py](uniprotParseHTTP_XML.py)):
 
   ```bash
-  python2 uniprotParseHTTP_XML.py http://www.uniprot.org/uniprot/Q2K3L7.xml
+  python2 uniprotParseHTTP_XML.py http://www.uniprot.org/uniprot/Q8IY21.xml
   ```
 
 6. Getting JSON content from internet, and parsing, using next official example from Ensembl: [https://github.com/Ensembl/ensembl-rest/wiki/Example-Python-Client](https://github.com/Ensembl/ensembl-rest/wiki/Example-Python-Client)
