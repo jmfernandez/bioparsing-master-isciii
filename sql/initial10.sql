@@ -1,0 +1,18 @@
+CREATE TABLE SWISSENTRY (
+	accnumber VARCHAR(10) NOT NULL,
+	id VARCHAR(25) NOT NULL,
+	lastupd DATE NOT NULL DEFAULT CURRENT_DATE,
+	description VARCHAR(1000),
+	seq TEXT NOT NULL,
+	molweight NUMERIC(9,0) NOT NULL,
+	PRIMARY KEY (accnumber),
+	UNIQUE (id)
+);
+
+CREATE TABLE ACCNUMBERS (
+	main_accnumber VARCHAR(10) NOT NULL,
+	accnumber VARCHAR(10) NOT NULL,
+	PRIMARY KEY (main_accnumber,accnumber),
+	FOREIGN KEY (main_accnumber) REFERENCES SWISSENTRY (accnumber)
+		ON DELETE CASCADE ON UPDATE CASCADE
+);
