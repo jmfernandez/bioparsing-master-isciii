@@ -33,7 +33,7 @@ Different python 2.7 examples for bioinformatic students, showing the advantages
   python2 uniprotParseHTTP.py http://www.uniprot.org/uniprot/Q8IY21.txt
   ```
   
-  If you want to test with a random UniProt SW entry from human, open next link in your browser: [http://www.uniprot.org/uniprot/?query=reviewed:yes&random=yes](http://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:9606&random=yes)
+  If you want to test with a random UniProt SW entry from human, open next link in your browser: [http://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:9606&random=yes](http://www.uniprot.org/uniprot/?query=reviewed:yes+AND+organism:9606&random=yes)
   
   and then copy the full URL, adding `.txt` suffix.
   
